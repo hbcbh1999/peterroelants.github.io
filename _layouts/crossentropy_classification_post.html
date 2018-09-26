@@ -1,0 +1,35 @@
+{% include header.html %}
+
+<div class="container">
+
+  <div class="main-template">
+
+	<div class="cell border-box-sizing text_cell rendered">
+		<div class="prompt input_prompt">
+		</div>
+			<div class="inner_cell">
+			<div class="text_cell_render border-box-sizing rendered_html">
+			<h1>{{page.title}}</h1>
+			<p>This is a 2-part tutorial on cross-entropy classification:</p>
+			<ul>
+				<li><a href="{% post_url 2015-06-10-cross_entropy_logistic %}">Part 1: Logistic classification function</a></li>
+				<li><a href="{% post_url 2015-06-10-cross_entropy_softmax %}">Part 2: Softmax classification function</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+    {{ content }}
+  </div>
+
+</div><!-- /.container -->
+
+<div class="container">
+
+  <div class="main-template">
+  <hr>
+    {% include post_social_media.html %}
+  </div>
+
+</div><!-- /.container -->
+
+{% include footer.html %}
